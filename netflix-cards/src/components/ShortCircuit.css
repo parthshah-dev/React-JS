@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.button-div {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}

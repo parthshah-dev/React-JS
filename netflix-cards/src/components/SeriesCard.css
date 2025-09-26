@@ -1,0 +1,33 @@
+/* .card-img img {
+  width: 100%;
+  min-height: 150px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+} */
+
+.card-details {
+  padding: 1rem;
+  flex: 1;
+}
+
+button {
+  background-color: #e50914;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #b20710;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: 2px solid #333;
+  outline-offset: 2px;
+}
