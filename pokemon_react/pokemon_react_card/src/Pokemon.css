@@ -1,0 +1,130 @@
+/* Pokemon.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6fb;
+  color: #333;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #ffcb05;
+  color: #2a75bb;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.header input {
+  padding: 0.6rem 1rem;
+  border: 2px solid #2a75bb;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  width: 250px;
+  max-width: 90%;
+  transition: all 0.3s ease;
+}
+
+.header input:focus {
+  border-color: #ff0000;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.4);
+}
+
+/* Container */
+.pokemon-container {
+  padding: 2rem;
+}
+
+.pokemon-container ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* PokemonCard.css */
+
+.pokemon-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* Pokemon Image */
+.pokemon-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+/* Pokemon Name */
+.pokemon-card h2 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0.5rem 0;
+  color: #2a75bb;
+}
+
+/* Pokemon Type Tag */
+.pokemon-type {
+  display: inline-block;
+  background-color: #ffcb05;
+  color: #2a75bb;
+  padding: 0.3rem 0.7rem;
+  margin: 0.2rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.pokemon-type.fire {
+  background-color: #fd7d24;
+  color: #fff;
+}
+.pok-type {
+  width: 50px;
+  background-color: #ffcb05;
+  padding: 5px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  color: white;
+}
+.pok-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.grid-three-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+h3 {
+  font-size: 12px;
+}
